@@ -10,6 +10,10 @@ user_token = tk.refresh_user_token(*conf[:2], conf[3])
 
 spotify = tk.Spotify(user_token)
 
-tracks = spotify.saved_tracks()
+tracks = spotify.saved_tracks().items
 
-print(tracks)
+track = tracks[0].track
+print(track)
+
+print(spotify.track_audio_features(track.id))
+
