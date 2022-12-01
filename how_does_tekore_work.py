@@ -13,7 +13,9 @@ spotify = tk.Spotify(user_token)
 tracks = spotify.saved_tracks().items
 
 track = tracks[0].track
-print(track)
+# print(track)
+print(track.artists[0])
+# print(spotify.track_audio_features(track.id))
 
-print(spotify.track_audio_features(track.id))
 
+print(spotify.artist('4KY9rCrokaoFzvMfX98u1q'))
