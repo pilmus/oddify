@@ -1,0 +1,13 @@
+acousticness
+danceability
+duration_ms
+energy
+instrumentalness
+key
+liveness
+loudness
+mode
+speechiness
+tempo
+time_signature
+valence
